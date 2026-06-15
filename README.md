@@ -6,6 +6,14 @@ y'know, I've just had too much time on my hands lately.
 
 on my path of finding a project to be proud of
 
+also turning on "Pause on debugger statement" is literally cheating.
+
+# Credit
+
+Spidermonkey randomness predictor from [mkutay](https://github.com/mkutay/spidermonkey-randomness-predictor)
+
+# Progress notes
+
 ok this is basically not even possible unless i look at the source code
 
 i looked at the source code and its still not looking possible in any way
@@ -34,3 +42,29 @@ SHA brute forcing looks to be even worse.
 i won ig but i cheated. its like impossible to win legit lol. get astronomically lucky ig.
 
 ![win](image.png)
+
+## Math.random() hacking
+
+Actually it might be possible to do this "legitimately" using [this](https://github.com/mkutay/spidermonkey-randomness-predictor)
+
+(i use firefox)
+
+```js
+function randomInt(n) {
+    return Math.floor(Math.random() * n);
+}
+```
+interesting
+
+```py
+pip install z3-solver
+```
+
+k im like trying ok
+```js
+let seq = [];
+for (let i = 0; i < 50; i++) {
+    seq.push(Math.random());
+}
+console.log(JSON.stringify(seq, null, 2));
+```
