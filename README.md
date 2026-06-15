@@ -28,3 +28,9 @@ function randomPassword() {
 ~4.21 * 10^27
 
 SHA brute forcing looks to be even worse.
+
+# I WON
+
+i won ig but i cheated. its like impossible to win legit lol. get astronomically lucky ig.
+
+![win](image.png)
