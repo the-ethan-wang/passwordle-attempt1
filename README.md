@@ -9,3 +9,22 @@ on my path of finding a project to be proud of
 ok this is basically not even possible unless i look at the source code
 
 i looked at the source code and its still not looking possible in any way
+
+```js
+function randomPassword() {
+    let letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let digits = '0123456789';
+    let punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
+    let s = letters.repeat(7) + digits.repeat(4) + punctuation.repeat(3);
+    let length = 14;
+    let res = Array.from({length}, (() => s[randomInt(s.length)])).join('');
+    debugger; // どうぞ
+    return res;
+}
+```
+
+94^14 distinct strings (weighted)
+
+~4.21 * 10^27
+
+SHA brute forcing looks to be even worse.
